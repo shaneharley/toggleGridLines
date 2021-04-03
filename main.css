@@ -3,6 +3,7 @@
 }
 body {
   background-color:lightgrey;
+  font-family: 'SF Pro', Helvetica, Arial, sans-serif;
   margin:0;
   padding:0;
 }
@@ -14,9 +15,17 @@ body {
   grid-template-columns: repeat(12, 1fr);
   grid-gap:16px;
 }
-.item {
-  height: 100vh;
-  background-color:white;
+
+
+#instructions {
+  position: fixed;
+  bottom: 5vh;
+  left: 5vh;
+  width: auto;
+  height: auto;
+  background-color:rgba(255,255,255,.8);
+  padding: 16px;
+  border-radius: 8px;
 }
 
 @media (min-width: 550px) and (max-width: 800px) {
@@ -42,7 +51,7 @@ body {
   height: 100vh;
 }
 .showGrid {
-  border-left: 1px solid white;
-  border-right: 1px solid white;
+  border-left: 1px solid red;
+  border-right: 1px solid red;
 }
 
